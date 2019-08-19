@@ -9,12 +9,13 @@
     <link rel="icon" href="assets/images/favicon.png" type="image/gif">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!--<link rel="stylesheet" href="assets/css/owl.carousel.min.css">-->
     <!--<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">-->
     <!--<link rel="stylesheet" href="assets/css/slicknav.min.css">-->
     <!--<link rel="stylesheet" href="assets/css/animate.min.css">-->
-    <!--<link rel="stylesheet" href="assets/css/magnific-popup.css">-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <!--<link rel="stylesheet" href="assets/css/responsive.css">-->
 
@@ -51,9 +52,66 @@
 <!--header section end-->
 
 
+<!--gallery section start-->
+<section class="gallery-section section-padding">
+    <div class="container">
 
-
-
+        <div class="gallery-border-style">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="gallery-title">
+                        <h5>our gallery</h5>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="gallery-filter-menu">
+                        <ul>
+                            <li class="active filter" data-filter="all">All</li>
+                            <li data-filter=".breakfast" class="filter">Breakfast</li>
+                            <li data-filter=".lunch" class="filter">Lunch</li>
+                            <li data-filter=".dinner" class="filter">Dinner</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="gallery-images" id="gallery_filter">
+                <div class="single-image mix breakfast">
+                    <a href="assets/images/gallery-1.jpg">
+                        <img src="assets/images/gallery-1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="single-image mix lunch dinner">
+                    <a href="assets/images/gallery-2.jpg">
+                        <img src="assets/images/gallery-2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="single-image mix dinner">
+                    <a href="assets/images/gallery-3.jpg">
+                        <img src="assets/images/gallery-3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="single-image mix breakfast">
+                    <a href="assets/images/gallery-4.jpg">
+                        <img src="assets/images/gallery-4.jpg" alt="">
+                    </a>
+                </div>
+                <div class="single-image mix lunch">
+                    <a href="assets/images/gallery-5.jpg">
+                        <img src="assets/images/gallery-5.jpg" alt="">
+                    </a>
+                </div>
+                <div class="single-image mix dinner">
+                    <a href="assets/images/gallery-6.jpg">
+                        <img src="assets/images/gallery-6.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--gallery section end-->
 
 <!--footer section start-->
 <br>
@@ -78,22 +136,31 @@
 <!--footer section end-->
 
 <!--back to top-->
-<!--<div class="back_to_top_area">
-    <div class="container">
-        <div class="row">
-            <div class="back_to_top">
-                <i class="fa fa-arrow-up"></i>
-            </div>
-        </div>
-    </div>
-</div>-->
+<div class="back_to_top">
+    <i class="fa fa-arrow-up"></i>
+</div>
 <!--back to end-->
+
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <!--<script src="assets/js/owl.carousel.min.js"></script>-->
+<script src="assets/js/mixitup.min.js"></script>
 <!--<script src="assets/js/jquery.slicknav.min.js"></script>-->
 <!--<script src="assets/js/wow.min.js"></script>-->
-<!--<script src="assets/js/jquery.magnific-popup.min.js"></script>-->
-<!--<script src="assets/js/custom.js"></script>-->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/custom.js"></script>
+<script>
+    /*gallery area*/
+    $('#gallery_filter').mixItUp();
+
+    /*magnific popup*/
+    $('.single-image').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery: {
+            enabled: true
+        },
+    });
+</script>
 </body>
 </html>

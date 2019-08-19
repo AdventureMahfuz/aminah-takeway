@@ -9,6 +9,25 @@ $(document).ready(function(){
             $(".header-section").removeClass("sticky_menu");
         }
     });
+
+
+    //back to top show when scroll
+    $(".back_to_top i.fa").css("display", "none");
+    $(window).on('scroll', function () {
+        var scroll = $(window).scrollTop();
+        if (scroll < 250) {
+            $(".back_to_top i.fa").css("display", "none");
+        } else {
+            $(".back_to_top i.fa").css("display", "block");
+        }
+    });
+    $(".back_to_top i.fa").on("click",function () {
+        $("html").animate({
+            scrollTop: 0
+        }, 800);
+    });
+
+
     //hero slider
     $('.hero-slider').owlCarousel({
         animateIn: 'fadeIn',
@@ -86,29 +105,6 @@ $(document).ready(function(){
         prependTo:'.responsive-mobile-menu',
     });*/
 
-    // magnific popup activation
-   /* $('.popup-img').magnificPopup({
-        gallery: {
-            enabled: true
-        },
-        type: 'image'
-    });*/
-
-    //back to top show when scroll
-    $(".back_to_top i.fa").css("display", "none");
-    $(window).on('scroll', function () {
-        var scroll = $(window).scrollTop();
-        if (scroll < 300) {
-            $(".back_to_top i.fa").css("display", "none");
-        } else {
-            $(".back_to_top i.fa").css("display", "block");
-        }
-    });
-    $(".back_to_top i.fa").on("click",function () {
-        $("html").animate({
-            scrollTop: 0
-        }, 800);
-    });
 
 });
 })( jQuery );

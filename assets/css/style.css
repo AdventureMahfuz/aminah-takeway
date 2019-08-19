@@ -113,6 +113,7 @@ a:focus{
     color: #fff;
     line-height: 35px;
     cursor: pointer;
+    display: none;
 }
 /**
 ================================================================================
@@ -485,7 +486,7 @@ footer style start
     width: 100%;
     bottom: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 2;
 }
 
 .developer-widget p img {
@@ -518,5 +519,189 @@ footer style end
 /**
 ===================================================================================
 ===============================  FRONT PAGE STYLE END  ==========================
+===================================================================================
+ */
+
+
+
+
+
+/**
+===================================================================================
+===============================  GALLERY PAGE STYLE START  ==========================
+===================================================================================
+ */
+.gallery-border-style{
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+.gallery-border-style:after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -2px;
+    width: 80px;
+    height: 3px;
+    border-bottom: 3px solid var(--secondary-color);
+    border-radius: 5px;
+}
+.gallery-title h5 {
+    color: var(--secondary-color);
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.gallery-filter-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+.gallery-filter-menu ul li {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    padding: 5px 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.gallery-images{
+    padding-top: 50px;
+}
+.single-image a img{
+    float: left;
+    display: inline-block;
+    width: 376px;
+    height: 200px;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 0 0 5px #999;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+.single-image a img:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.03);
+    transition: all 0.2s;
+}
+.mix{
+    display: none;
+}
+/**
+===================================================================================
+===============================  GALLERY PAGE STYLE END  ==========================
+===================================================================================
+ */
+
+
+
+/**
+===================================================================================
+===============================  CONTACT PAGE STYLE START  ==========================
+===================================================================================
+ */
+.address-map-section{
+    background: #F2F2F2;
+}
+.address-map-section iframe{
+    width: 100%;
+    height: 450px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+.form_and_address_section{
+    padding-bottom: 70px;
+}
+.comment-form label {
+    font-weight: 700;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--secondary-color);
+    text-transform: capitalize;
+}
+
+.form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 -0.8rem var(--secondary-color);
+}
+.submit-btn {
+    border: none;
+    background: var(--secondary-color);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.submit-btn:focus{
+    outline: none;
+}
+.address{
+    float: right;
+    text-align: right;
+}
+.address h1,h3{
+    color: var(--secondary-color);
+}
+/**
+===================================================================================
+===============================  CONTACT PAGE STYLE END  ==========================
+===================================================================================
+ */
+
+
+
+
+/**
+===================================================================================
+===============================  LOGIN PAGE STYLE START  ==========================
+===================================================================================
+ */
+.login-form {
+    border: 1px solid #ddd;
+}
+.form-header-panel h4 {
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 30px 0;
+    text-transform: capitalize;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.form-footer-panel {
+    border-top: 1px solid #ddd;
+    padding: 15px 30px;
+    margin-top: 25px;
+}
+.register-link a {
+    text-transform: capitalize;
+    color: var(--primary-color);
+}
+.submit-btn-area button {
+    background: var(--primary-color);
+    color: #fff;
+    text-transform: capitalize;
+    border: none;
+    padding: 5px 25px;
+}
+
+.login-form-area label {
+    color: var(--secondary-color);
+    text-transform: capitalize;
+    line-height: 35px;
+    cursor: pointer;
+}
+.login-form-area a {
+    color: var(--primary-color);
+}
+/**
+===================================================================================
+===============================  LOGIN PAGE STYLE END  ==========================
 ===================================================================================
  */
