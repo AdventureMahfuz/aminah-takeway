@@ -24,8 +24,6 @@ Index Of Content
 }
 
 
-
-
 /*
 =============================================================================
 scroll bar style for chrome
@@ -48,6 +46,7 @@ scroll bar style for chrome
 scroll bar style for chrome
 ==============================================================================
 */
+
 
 /*
 =============================================================================
@@ -95,6 +94,25 @@ a:focus{
     height: 3px;
     border-bottom: 3px solid var(--secondary-color);
     border-radius: 5px;
+}
+.sticky_menu {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.back_to_top i.fa {
+    position: fixed;
+    right: 25px;
+    bottom: 75px;
+    width: 35px;
+    height: 35px;
+    background: var(--primary-color);
+    text-align: center;
+    color: #fff;
+    line-height: 35px;
+    cursor: pointer;
 }
 /**
 ================================================================================
@@ -183,14 +201,14 @@ slider style start
 .single-slider-item {
     background-size: cover;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 65vh;
     background-position: center center;
 }
 
 .display-table {
     display: table;
     width: 100%;
-    height: 70vh;
+    height: 65vh;
 }
 .table-cell {
     display: table-cell;
@@ -352,10 +370,108 @@ info style end
 */
 
 
+/**
+================================================================================
+about us style start
+================================================================================
+*/
+.about-us-info {
+    padding-top: 20px;
+}
+
+.about-us-image img {
+    width: 40%;
+    display: inline-block;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.about-us-content p {
+    text-align: justify;
+}
+
+.apps-link {
+    padding-top: 20px;
+}
+
+.apps-link img {
+    width: 75%;
+    margin-bottom: 20px;
+}
+/**
+================================================================================
+about us style end
+================================================================================
+*/
 
 
+/**
+================================================================================
+feedback and facebook like section style start
+================================================================================
+*/
+.facebook-like-iframe {
+    padding-top: 20px;
+}
 
+.feedback-content {
+    margin-top: 25px;
+    border-top: 2px solid var(--secondary-color);
+}
 
+.feedback-content p {
+    background: #f2f2f2;
+    padding: 10px;
+    font-style: italic;
+}
+
+.customer-name h5 {
+    color: #555;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 20px;
+}
+
+.customer-name h5 span {
+    font-size: 13px;
+    font-style: italic;
+    padding-left: 10px;
+    color: var(--secondary-color);
+}
+
+#feedback-slider .owl-nav {
+    position: absolute;
+    right: 0;
+    top: -30%;
+    font-size: 30px;
+}
+
+#feedback-slider .owl-nav .owl-prev {
+    margin-right: 10px;
+}
+
+#feedback-slider .owl-nav .owl-prev:focus {
+    outline: none;
+}
+
+#feedback-slider .owl-nav .owl-next:focus {
+    outline: none;
+}
+
+#feedback-slider .owl-nav .owl-prev span, #feedback-slider .owl-nav .owl-next span {
+    background: var(--secondary-color);
+    width: 35px;
+    height: 35px;
+    display: block;
+    color: #fff;
+    line-height: 30px;
+}
+
+/**
+================================================================================
+ 6. feedback and facebook like section style end
+================================================================================
+*/
 
 
 /**
@@ -369,6 +485,7 @@ footer style start
     width: 100%;
     bottom: 0;
     left: 0;
+    z-index: 9999;
 }
 
 .developer-widget p img {

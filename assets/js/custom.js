@@ -1,5 +1,14 @@
 (function($) {
 $(document).ready(function(){
+    /*sticky menu when scroll*/
+    $(window).on('scroll', function () {
+        var scroll = $(window).scrollTop();
+        if (scroll > 0) {
+            $(".header-section").addClass("sticky_menu");
+        } else {
+            $(".header-section").removeClass("sticky_menu");
+        }
+    });
     //hero slider
     $('.hero-slider').owlCarousel({
         animateIn: 'fadeIn',
@@ -42,6 +51,31 @@ $(document).ready(function(){
     });
 
 
+    /*feedback carousel*/
+    $('#feedback-slider').owlCarousel({
+        loop: true,
+        margin: 0,
+        responsiveClass: true,
+        nav: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true,
+                loop: true
+            },
+            600: {
+                items: 1,
+                nav: true,
+                loop: true
+            },
+            1000: {
+                items: 1,
+                nav: true,
+                loop: true
+            }
+        }
+    });
 
 
     //WoW js activation
@@ -61,7 +95,7 @@ $(document).ready(function(){
     });*/
 
     //back to top show when scroll
-    /*$(".back_to_top i.fa").css("display", "none");
+    $(".back_to_top i.fa").css("display", "none");
     $(window).on('scroll', function () {
         var scroll = $(window).scrollTop();
         if (scroll < 300) {
@@ -74,7 +108,7 @@ $(document).ready(function(){
         $("html").animate({
             scrollTop: 0
         }, 800);
-    });*/
+    });
 
 });
 })( jQuery );
