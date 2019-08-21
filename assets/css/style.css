@@ -9,8 +9,6 @@ Index Of Content
  5.Login Page
  */
 
-
-
 /*
 =============================================================================
 >>>> color variable <<<<
@@ -19,10 +17,10 @@ Index Of Content
 :root {
     --primary-color: #A80934;
 }
+
 :root {
     --secondary-color: #620000;
 }
-
 
 /*
 =============================================================================
@@ -47,7 +45,6 @@ scroll bar style for chrome
 ==============================================================================
 */
 
-
 /*
 =============================================================================
  1. DEFAULT STYLE START
@@ -64,16 +61,20 @@ img {
     width: 100%;
     height: auto;
 }
+
 .section-padding {
     padding: 35px 0;
 }
-a:hover{
+
+a:hover {
     text-decoration: none;
 }
-a:focus{
+
+a:focus {
     outline: none;
     text-decoration: none;
 }
+
 .section-title h4 {
     color: var(--secondary-color);
     position: relative;
@@ -95,6 +96,7 @@ a:focus{
     border-bottom: 3px solid var(--secondary-color);
     border-radius: 5px;
 }
+
 .sticky_menu {
     position: fixed;
     z-index: 9999;
@@ -102,6 +104,7 @@ a:focus{
     left: 0;
     top: 0;
 }
+
 .back_to_top i.fa {
     position: fixed;
     right: 25px;
@@ -115,14 +118,12 @@ a:focus{
     cursor: pointer;
     display: none;
 }
+
 /**
 ================================================================================
   1. DEFAULT STYLE END
 ================================================================================
 */
-
-
-
 
 /**
 ===================================================================================
@@ -138,21 +139,26 @@ header style start
 .header-section {
     background: var(--primary-color);
 }
+
 .logo img {
     width: initial;
 }
+
 .logo {
     padding: 8px 0;
 }
+
 ul#nav {
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: right;
 }
+
 ul#nav li {
     display: inline-block;
 }
+
 ul#nav li a {
     position: relative;
     color: #fff;
@@ -160,10 +166,12 @@ ul#nav li a {
     padding: 37px 15px;
     display: block;
 }
+
 ul#nav li a:hover {
     background: var(--secondary-color);
     transition: all .5s;
 }
+
 ul#nav li a:hover:after {
     position: absolute;
     content: "";
@@ -174,10 +182,12 @@ ul#nav li a:hover:after {
     border-bottom: 2px solid #fff;
     transition: all .5s;
 }
+
 ul#nav li.active a {
     background: var(--secondary-color);
     position: relative;
 }
+
 ul#nav li.active a:after {
     position: absolute;
     content: "";
@@ -187,12 +197,12 @@ ul#nav li.active a:after {
     height: 2px;
     border-bottom: 2px solid #fff;
 }
+
 /**
 ================================================================================
 header style end
 ================================================================================
 */
-
 
 /**
 ================================================================================
@@ -211,10 +221,12 @@ slider style start
     width: 100%;
     height: 65vh;
 }
+
 .table-cell {
     display: table-cell;
     vertical-align: middle;
 }
+
 .slide-cont h2 {
     font-size: 32px;
     font-weight: 300;
@@ -225,6 +237,7 @@ slider style start
     margin: 5px 0;
     text-transform: capitalize;
 }
+
 .slide-cont h3 {
     font-size: 20px;
     font-weight: 300;
@@ -235,17 +248,19 @@ slider style start
     display: inline-block;
     margin: 5px 0;
 }
+
 .slide-cont h4 {
     font-size: 19px;
     font-weight: 400;
-    background: rgba(255,255,255,0.7);
+    background: rgba(255, 255, 255, 0.7);
     text-transform: capitalize;
     color: #555;
     padding: 7px 15px;
     display: inline-block;
     margin: 5px 0;
 }
-.theme-btn a{
+
+.theme-btn a {
     background: #000;
     color: #ffffff;
     font-size: 22px;
@@ -257,9 +272,10 @@ slider style start
     line-height: 80px;
 }
 
-.hero-slider .owl-prev:focus, .hero-slider .owl-next:focus{
+.hero-slider .owl-prev:focus, .hero-slider .owl-next:focus {
     outline: none
 }
+
 .hero-slider .owl-prev {
     position: absolute;
     top: 50%;
@@ -267,7 +283,8 @@ slider style start
     transform: translate(0, -50%);
     z-index: 9999
 }
-.hero-slider .owl-prev span, .hero-slider .owl-next span{
+
+.hero-slider .owl-prev span, .hero-slider .owl-next span {
     color: #fff;
     background: #000;
     width: 30px;
@@ -276,18 +293,19 @@ slider style start
     display: block;
     line-height: 40px
 }
+
 .hero-slider .owl-next {
     position: absolute;
     top: 50%;
     right: 0;
     transform: translate(0, -50%);
 }
+
 /**
 ================================================================================
 slider style end
 ================================================================================
 */
-
 
 /**
 ================================================================================
@@ -345,9 +363,11 @@ info style start
     padding: 0;
     margin: 0;
 }
+
 .location ul li {
     padding-bottom: 10px;
 }
+
 .location ul li i.fa {
     color: #fff;
     background: var(--secondary-color);
@@ -369,7 +389,6 @@ info style start
 info style end
 ================================================================================
 */
-
 
 /**
 ================================================================================
@@ -399,12 +418,12 @@ about us style start
     width: 75%;
     margin-bottom: 20px;
 }
+
 /**
 ================================================================================
 about us style end
 ================================================================================
 */
-
 
 /**
 ================================================================================
@@ -474,7 +493,6 @@ feedback and facebook like section style start
 ================================================================================
 */
 
-
 /**
 ================================================================================
 footer style start
@@ -492,6 +510,7 @@ footer style start
 .developer-widget p img {
     width: 16%;
 }
+
 .developer-widget p {
     text-align: right;
     margin-bottom: 0;
@@ -499,18 +518,22 @@ footer style start
     text-transform: capitalize;
     line-height: 70px;
 }
+
 .copyright-widget p {
     margin-bottom: 0;
     color: #fff;
     text-transform: capitalize;
     line-height: 70px;
 }
+
 .copyright-widget p a {
     color: #fff;
 }
+
 .copyright-widget p a:hover {
     text-decoration: underline;
 }
+
 /**
 ================================================================================
 footer style end
@@ -522,20 +545,17 @@ footer style end
 ===================================================================================
  */
 
-
-
-
-
 /**
 ===================================================================================
 ===============================  GALLERY PAGE STYLE START  ==========================
 ===================================================================================
  */
-.gallery-border-style{
+.gallery-border-style {
     position: relative;
     border-bottom: 1px solid #ddd;
 }
-.gallery-border-style:after{
+
+.gallery-border-style:after {
     position: absolute;
     content: "";
     left: 0;
@@ -545,6 +565,7 @@ footer style end
     border-bottom: 3px solid var(--secondary-color);
     border-radius: 5px;
 }
+
 .gallery-title h5 {
     color: var(--secondary-color);
     font-size: 16px;
@@ -559,6 +580,7 @@ footer style end
     margin: 0;
     float: right;
 }
+
 .gallery-filter-menu ul li {
     display: inline-block;
     font-size: 16px;
@@ -568,10 +590,12 @@ footer style end
     text-transform: capitalize;
     cursor: pointer;
 }
-.gallery-images{
+
+.gallery-images {
     padding-top: 50px;
 }
-.single-image a img{
+
+.single-image a img {
     float: left;
     display: inline-block;
     width: 376px;
@@ -582,40 +606,44 @@ footer style end
     border-radius: 10px;
     transition: all 0.2s;
 }
-.single-image a img:hover{
+
+.single-image a img:hover {
     -ms-transform: scale(1.5); /* IE 9 */
     -webkit-transform: scale(1.5); /* Safari 3-8 */
     transform: scale(1.03);
     transition: all 0.2s;
 }
-.mix{
+
+.mix {
     display: none;
 }
+
 /**
 ===================================================================================
 ===============================  GALLERY PAGE STYLE END  ==========================
 ===================================================================================
  */
 
-
-
 /**
 ===================================================================================
 ===============================  CONTACT PAGE STYLE START  ==========================
 ===================================================================================
  */
-.address-map-section{
+.address-map-section {
     background: #F2F2F2;
 }
-.address-map-section iframe{
+
+.address-map-section iframe {
     width: 100%;
     height: 450px;
     border: 2px solid #ddd;
     border-radius: 5px;
 }
-.form_and_address_section{
+
+.form_and_address_section {
     padding-bottom: 70px;
 }
+
 .comment-form label {
     font-weight: 700;
     margin-bottom: 0;
@@ -629,6 +657,7 @@ footer style end
     border-color: var(--secondary-color);
     box-shadow: 0 0 0 -0.8rem var(--secondary-color);
 }
+
 .submit-btn {
     border: none;
     background: var(--secondary-color);
@@ -637,24 +666,25 @@ footer style end
     border-radius: 5px;
     cursor: pointer;
 }
-.submit-btn:focus{
+
+.submit-btn:focus {
     outline: none;
 }
-.address{
+
+.address {
     float: right;
     text-align: right;
 }
-.address h1,h3{
+
+.address h1, h3 {
     color: var(--secondary-color);
 }
+
 /**
 ===================================================================================
 ===============================  CONTACT PAGE STYLE END  ==========================
 ===================================================================================
  */
-
-
-
 
 /**
 ===================================================================================
@@ -664,6 +694,7 @@ footer style end
 .login-form {
     border: 1px solid #ddd;
 }
+
 .form-header-panel h4 {
     border-bottom: 1px solid #ddd;
     margin: 0;
@@ -679,10 +710,12 @@ footer style end
     padding: 15px 30px;
     margin-top: 25px;
 }
+
 .register-link a {
     text-transform: capitalize;
     color: var(--primary-color);
 }
+
 .submit-btn-area button {
     background: var(--primary-color);
     color: #fff;
@@ -697,11 +730,462 @@ footer style end
     line-height: 35px;
     cursor: pointer;
 }
+
 .login-form-area a {
     color: var(--primary-color);
 }
+
 /**
 ===================================================================================
 ===============================  LOGIN PAGE STYLE END  ==========================
+===================================================================================
+ */
+
+/**
+===================================================================================
+===============================  RESERVATION PAGE STYLE START  ==========================
+===================================================================================
+ */
+/*
+.menu-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.menu-bar ul li {
+    display: inline-block;
+    color: #333;
+    position: relative;
+}
+
+.menu-bar ul li ul {
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    text-align: left;
+    box-shadow: 0 4px 7px #999;
+    padding: 0 20px;
+    right: 0;
+    top: 75px;
+    display: none;
+    transition: all .5s;
+}
+
+.menu-bar ul li ul li {
+    display: initial
+}
+
+.menu-bar ul li ul li a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    padding: 10px 0;
+    display: block;
+    text-transform: capitalize;
+    border-left: none;
+    text-align: left;
+}
+
+.menu-bar ul li a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    padding: 25px;
+    display: block;
+    text-transform: capitalize;
+    border-left: 1px solid #ddd;
+    text-align: center;
+}
+
+.menu-bar ul li a i.fa {
+    padding-left: 10px;
+}
+
+section.top-bar-section {
+    border-bottom: 1px solid #ddd;
+}
+
+.logo a {
+    font-size: 30px;
+    text-align: center;
+    line-height: 70px;
+    font-weight: 700;
+    color: #333;
+}
+*/
+
+.reservation-title h2, .form-heading h3, p.optional {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+.time_alert p {
+    margin-bottom: 30px;
+    background: #DCF9E8;
+    padding: 15px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.time_alert p span {
+    float: right;
+    font-weight: 700;
+}
+
+.all-times .owl-nav {
+    position: absolute;
+    right: 10px;
+    top: -67px;
+    font-size: 40px;
+    color: #999;
+}
+
+.all-times .owl-nav .owl-prev:focus {
+    outline: none;
+}
+
+.all-times .owl-nav .owl-prev span {
+    display: inline-block;
+    width: 130px;
+    height: 50px;
+    line-height: 45px;
+    box-shadow: -2px 2px 2px #d3d3d3;
+    border-radius: 30px;
+}
+
+.all-times .owl-nav .owl-next:focus {
+    outline: none;
+}
+
+.all-times .owl-nav .owl-next span {
+    display: inline-block;
+    width: 130px;
+    height: 50px;
+    line-height: 45px;
+    box-shadow: 2px 2px 2px #d3d3d3;
+    border-radius: 30px;
+}
+
+.apply-btn a {
+    text-align: center;
+    width: 100%;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--secondary-color);
+    font-size: 20px;
+}
+
+/*.reservation-details-merchant-name h3 {
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: 600;
+}*/
+.booking-info {
+    position: relative;
+}
+
+.people-number,
+.booking-date {
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.select-time {
+    margin-top: 75px;
+}
+
+.people-icon,
+.calender-icon {
+    display: inline-block;
+    float: left;
+}
+
+.people-icon i.fa,
+.calender-icon i.fa {
+    color: #999;
+    font-size: 30px;
+}
+
+.select-people,
+.select-date {
+    width: 90%;
+    float: right;
+    border-bottom: 1px solid #999;
+    cursor: pointer;
+}
+
+.select-people p {
+    margin-bottom: 8px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.select-people p i.fa {
+    float: right;
+    padding-right: 15px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #999;
+}
+
+.date-picker-field {
+    position: relative;
+}
+
+.date-picker-field .form-control:focus {
+    box-shadow: none;
+}
+
+div#ui-datepicker-div {
+    width: 42%;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: none;
+    text-align: center;
+}
+
+.date-picker-field i.fa {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translate(-2%, -50%);
+    font-size: 25px;
+    color: #999;
+}
+
+.date-picker-field input#datepicker {
+    border: none;
+    text-transform: capitalize;
+    font-weight: 700;
+    padding: 0;
+}
+
+.date-picker-field input#datepicker::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: var(--secondary-color);
+}
+
+.date-picker-field input#datepicker:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: var(--secondary-color);
+    opacity: 1;
+}
+
+.date-picker-field input#datepicker::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: var(--secondary-color);;
+    opacity: 1;
+}
+
+.date-picker-field input#datepicker:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--secondary-color);;
+}
+
+.date-picker-field input#datepicker::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--secondary-color);;
+}
+
+.date-picker-field input#datepicker::placeholder { /* Most modern browsers support this now. */
+    color: var(--secondary-color);;
+}
+
+.people-count ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.people-count ul li {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    margin: 5px;
+    font-size: 18px;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+.people-count ul li.selected {
+    background: var(--secondary-color);;
+    color: #ffffff;
+    border-radius: 50%
+}
+
+.people-count {
+    position: absolute;
+    top: 34px;
+    background: #fff;
+    z-index: 888;
+    padding: 20px 0;
+    box-shadow: 0 2px 2px #d3d3d3;
+    display: none
+}
+
+.time-section-title p {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.time-section-title p i.fa {
+    color: var(--secondary-color);;
+    font-size: 22px;
+}
+
+.single-time-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.single-time-block ul li {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px #D3D3D3;
+    border-radius: 30px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.single-time-block ul li:hover {
+    background: #F5F5F5;
+}
+
+.single-time-block ul li.selected {
+    background: var(--secondary-color);;
+    color: #ffffff;
+}
+
+/*.custom-select {
+    border: none;
+    border-bottom: 1px solid #ddd !important;
+}*/
+
+/*.form-heading h3 {
+    text-align: center;
+    display: block;
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 70px;
+    color: #333;
+}*/
+
+.account-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.account-list ul li {
+    display: inline-block;
+}
+
+.account-list {
+    width: 100%;
+    text-align: center;
+}
+
+.account-list ul li a {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 25px;
+    border-right: 1px solid #ddd;
+}
+
+.account-list ul li a i.fab {
+    font-size: 30px;
+    padding-right: 5px;
+}
+
+.account-list ul li:last-child a {
+    border: none;
+}
+
+p.another-account {
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-top: 50px;
+}
+
+/*p.optional {
+    text-align: center;
+    display: block;
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 70px;
+    color: #333;
+}*/
+
+/*.reserve-btn a {
+    text-transform: capitalize;
+    text-align: center;
+    display: block;
+    padding: 10px 0;
+    background: #E65B66;
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px;
+    margin: 50px 0;
+}*/
+.form-control {
+    border-radius: 30px;
+    padding: 20px;
+}
+textarea.form-control{
+    border-radius: initial;
+}
+.from-group{
+    margin: 10px 0;
+}
+.info-options {
+    margin-top: 25px;
+}
+.info-options label {
+    font-weight: 400;
+    font-size: 16px;
+    font-style: italic;
+    margin-left: 10px;
+    line-height: 30px;
+}
+
+input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+}
+button.reserve-btn {
+    background: var(--secondary-color);
+    color: #fff;
+    text-transform: capitalize;
+    display: block;
+    float: right;
+    border: none;
+    padding: 10px 25px;
+    margin-top: 35px;
+    box-shadow: 0 0 10px #999;
+    border-radius: 5px;
+}
+/**
+===================================================================================
+===============================  RESERVATION PAGE STYLE END  ==========================
 ===================================================================================
  */
