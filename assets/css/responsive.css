@@ -167,7 +167,8 @@
     }
 
     .single-time-block ul li {
-        width: 26%;
+        width: 22%;
+        margin: 5px;
     }
 
     /*reservation page end*/
