@@ -4,9 +4,10 @@ Index Of Content
 ============================================================================
  1.Front page
  2.Order online page
- 3.Gallery page
- 4.Contact us page
- 5.Login Page
+ 3.Reservation page
+ 4.Gallery page
+ 5.Contact us page
+ 6.Login Page
  */
 
 /*
@@ -118,6 +119,90 @@ a:focus {
     cursor: pointer;
     display: none;
 }
+
+.mobile-order-btn {
+    display: none;
+}
+
+/*mobile view menubar start*/
+
+.sticky-area-mobile-view {
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    background: var(--primary-color);
+    width: 100%;
+    height: 65px;
+}
+
+.mobile-menu-btn i.fa {
+    font-size: 27px;
+}
+
+.mobile-sticky-bar-common-style {
+    width: 20%;
+    float: left;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.mobile-sticky-bar-common-style i.fa {
+    color: #fff;
+    font-size: 22px;
+}
+
+.mobile-sticky-bar-common-style p {
+    color: #fff;
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+    margin-top: -3px;
+}
+
+.sticky-area-mobile-view {
+    display: none;
+}
+
+ul.mobile-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: var(--primary-color);
+    position: fixed;
+    bottom: 48px;
+    right: -100%;
+    z-index: 9999;
+    width: 100%;
+    opacity: 0;
+    overflow: scroll;
+    height: 49%;
+    transition: all .5s;
+}
+
+ul.mobile-menu li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    text-decoration: none;
+    transition: all .5s;
+    display: block;
+    padding: 10px 20px;
+}
+
+#close {
+    position: absolute;
+    right: 9px;
+    top: 3px;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    padding: 2px;
+}
+
+/*mobile view menubar end*/
 
 /**
 ================================================================================
@@ -307,6 +392,18 @@ slider style end
 ================================================================================
 */
 
+.mobile-order-btn a {
+    background: var(--secondary-color);
+    display: block;
+    padding: 15px 0;
+    border-radius: 30px;
+    margin-top: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+}
+
 /**
 ================================================================================
 info style start
@@ -432,6 +529,7 @@ feedback and facebook like section style start
 */
 .facebook-like-iframe {
     padding-top: 20px;
+    overflow: hidden;
 }
 
 .feedback-content {
@@ -746,76 +844,6 @@ footer style end
 ===============================  RESERVATION PAGE STYLE START  ==========================
 ===================================================================================
  */
-/*
-.menu-bar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: right;
-}
-
-.menu-bar ul li {
-    display: inline-block;
-    color: #333;
-    position: relative;
-}
-
-.menu-bar ul li ul {
-    position: absolute;
-    list-style: none;
-    margin: 0;
-    text-align: left;
-    box-shadow: 0 4px 7px #999;
-    padding: 0 20px;
-    right: 0;
-    top: 75px;
-    display: none;
-    transition: all .5s;
-}
-
-.menu-bar ul li ul li {
-    display: initial
-}
-
-.menu-bar ul li ul li a {
-    font-size: 16px;
-    font-weight: 600;
-    color: #333;
-    padding: 10px 0;
-    display: block;
-    text-transform: capitalize;
-    border-left: none;
-    text-align: left;
-}
-
-.menu-bar ul li a {
-    font-size: 16px;
-    font-weight: 600;
-    color: #333;
-    padding: 25px;
-    display: block;
-    text-transform: capitalize;
-    border-left: 1px solid #ddd;
-    text-align: center;
-}
-
-.menu-bar ul li a i.fa {
-    padding-left: 10px;
-}
-
-section.top-bar-section {
-    border-bottom: 1px solid #ddd;
-}
-
-.logo a {
-    font-size: 30px;
-    text-align: center;
-    line-height: 70px;
-    font-weight: 700;
-    color: #333;
-}
-*/
-
 .reservation-title h2, .form-heading h3, p.optional {
     text-align: center;
     font-size: 22px;
@@ -883,11 +911,6 @@ section.top-bar-section {
     font-size: 20px;
 }
 
-/*.reservation-details-merchant-name h3 {
-    padding: 20px 0;
-    font-size: 18px;
-    font-weight: 600;
-}*/
 .booking-info {
     position: relative;
 }
@@ -1067,22 +1090,6 @@ div#ui-datepicker-div {
     color: #ffffff;
 }
 
-/*.custom-select {
-    border: none;
-    border-bottom: 1px solid #ddd !important;
-}*/
-
-/*.form-heading h3 {
-    text-align: center;
-    display: block;
-    width: 100%;
-    text-transform: capitalize;
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 70px;
-    color: #333;
-}*/
-
 .account-list ul {
     list-style: none;
     padding: 0;
@@ -1125,41 +1132,23 @@ p.another-account {
     margin-top: 50px;
 }
 
-/*p.optional {
-    text-align: center;
-    display: block;
-    width: 100%;
-    text-transform: capitalize;
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 70px;
-    color: #333;
-}*/
-
-/*.reserve-btn a {
-    text-transform: capitalize;
-    text-align: center;
-    display: block;
-    padding: 10px 0;
-    background: #E65B66;
-    color: #fff;
-    font-weight: 600;
-    font-size: 25px;
-    margin: 50px 0;
-}*/
 .form-control {
     border-radius: 30px;
     padding: 20px;
 }
-textarea.form-control{
+
+textarea.form-control {
     border-radius: initial;
 }
-.from-group{
+
+.from-group {
     margin: 10px 0;
 }
+
 .info-options {
     margin-top: 25px;
 }
+
 .info-options label {
     font-weight: 400;
     font-size: 16px;
@@ -1172,6 +1161,7 @@ input[type=checkbox] {
     width: 16px;
     height: 16px;
 }
+
 button.reserve-btn {
     background: var(--secondary-color);
     color: #fff;
@@ -1184,6 +1174,7 @@ button.reserve-btn {
     box-shadow: 0 0 10px #999;
     border-radius: 5px;
 }
+
 /**
 ===================================================================================
 ===============================  RESERVATION PAGE STYLE END  ==========================

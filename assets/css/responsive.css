@@ -1,11 +1,227 @@
 /*Medium Layout: 1280*/
-@media only screen and (min-width: 992px) and (max-width: 1200px){}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /*Gallery page start*/
+    .single-image a img {
+        width: 308px;
+    }
+
+    /*Gallery page end*/
+    /*reservation page start*/
+    .single-time-block ul li {
+        width: 28%;
+    }
+
+    /*reservation page end*/
+}
 
 /*Tablet Layout: 768px*/
-@media only screen and (min-width: 768px) and (max-width: 991px) {}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /*front page start*/
+    body {
+        font-size: 12px;
+    }
+
+    .info-content {
+        padding: 0;
+    }
+
+    .notice-bord h2 {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    #feedback-slider .owl-nav {
+        top: -46px;
+    }
+
+    .slider-content {
+        text-align: center;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    ul#nav li a {
+        padding: 26px 15px;
+    }
+
+    /*front page end*/
+    /*Gallery page start*/
+    .single-image a img {
+        width: 360px;
+    }
+
+    /*Gallery page end*/
+    /*login-registration page start*/
+    .form-control {
+        margin-bottom: 15px;
+    }
+
+    /*login-registration page end*/
+}
 
 /*Mobile Layout: 320px*/
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+    /*mobile view menubar start*/
+    .sticky-area-mobile-view {
+        display: block;
+        border-top: 1px solid #fff;
+    }
+
+    /*mobile view menubar end*/
+    /*Front page start*/
+    .mobile-order-btn {
+        display: block;
+    }
+
+    .main-navigation {
+        display: none;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .slider-content {
+        text-align: center;
+    }
+
+    .slide-cont h2 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .slide-cont h3 {
+    }
+
+    .hero-slider .owl-prev, .hero-slider .owl-next {
+        top: 85%;
+    }
+
+    body {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .single-info-section {
+        margin-bottom: 25px;
+    }
+
+    .section-title h4 {
+        font-size: 20px;
+    }
+
+    .about-us-image img {
+        width: 100%;
+        float: initial;
+        margin: initial;
+    }
+
+    .our-apps {
+        margin-top: 35px;
+    }
+
+    #feedback-slider .owl-nav {
+        top: -45px;
+    }
+
+    footer.footer-section {
+        display: none;
+    }
+
+    /*Front page end*/
+    /*login-registration page start*/
+    .col-sm-2.text-right {
+        padding: 0;
+    }
+
+    .col-xs-3.text-right {
+        padding: 0;
+    }
+
+    .form-control {
+        margin-bottom: 15px;
+    }
+
+    /*login-registration page end*/
+    /*reservation page start*/
+    div#ui-datepicker-div {
+        width: 100%;
+        left: 0 !important;
+    }
+
+    .date-picker-field input#datepicker {
+        font-size: 16px;
+    }
+
+    .all-times .owl-nav .owl-prev span, .all-times .owl-nav .owl-next span {
+        width: 90px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .all-times .owl-nav {
+        top: -48px;
+    }
+
+    .single-time-block ul li {
+        width: 26%;
+    }
+
+    /*reservation page end*/
+    /*gallery page start*/
+    .gallery-filter-menu ul li {
+        padding: 3px;
+        line-height: 45px;
+    }
+
+    .single-image a img {
+        width: 100%;
+        height: auto;
+        margin: initial;
+        margin-bottom: 15px;
+        float: initial;
+    }
+
+    /*gallery page end*/
+    /*contact page start*/
+    .submit-btn {
+        float: right;
+        display: block;
+    }
+
+    .comment-form {
+        overflow: hidden;
+    }
+
+    .address {
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+
+    /*contact page end*/
+}
 
 /*Wide Mobile Layout: 480px*/
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    /*front page start*/
+    .about-us-image img {
+        width: 60%;
+        float: left;
+        margin-right: 15px;
+    }
+
+    /*front page end*/
+    /*gallery page start*/
+    .single-image a img {
+        width: 353px;
+        height: 190px;
+        margin: 5px;
+        float: left;
+    }
+
+    /*gallery page end*/
+}
