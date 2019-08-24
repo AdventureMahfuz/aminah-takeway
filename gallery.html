@@ -7,13 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gallery Page : Aaminah's</title>
     <link rel="icon" href="assets/images/favicon.png" type="image/gif">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/ginilablibrary.css">
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -110,6 +104,15 @@
                             <li data-filter=".dinner" class="filter">Dinner</li>
                         </ul>
                     </div>
+                    <div class="mobile-filter-menu">
+                        <p><span id="select-gallery-item">All</span><i class="fa fa-angle-down"></i></p>
+                        <ul id="mobile_filter">
+                            <li class="active filter" data-filter="all" data="all">All</li>
+                            <li data-filter=".breakfast" class="filter" data="breakfast">Breakfast</li>
+                            <li data-filter=".lunch" class="filter" data="lunch">Lunch</li>
+                            <li data-filter=".dinner" class="filter" data="dinner">Dinner</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -179,11 +182,7 @@
 </div>
 <!--back to end-->
 
-<script src="assets/js/jquery-3.3.1.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/mixitup.min.js"></script>
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
-<script src="assets/js/custom.js"></script>
+<script src="assets/js/ginilablibrary.min.js"></script>
 <script>
     /*gallery area*/
     $('#gallery_filter').mixItUp();
@@ -195,6 +194,20 @@
         gallery: {
             enabled: true
         },
+    });
+
+
+    $(document).ready(function () {
+
+        /*mobile gallery filter items custom dropdown*/
+        $('ul#mobile_filter li').click(function () {
+            $('#select-gallery-item').html($(this).attr('data'));
+            $('ul#mobile_filter').css("display","none");
+        });
+
+        $('.mobile-filter-menu p').click(function () {
+            $('ul#mobile_filter').css("display","block");
+        });
     });
 </script>
 </body>

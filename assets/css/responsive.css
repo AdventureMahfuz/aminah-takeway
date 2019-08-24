@@ -20,7 +20,9 @@
     body {
         font-size: 12px;
     }
-
+    .our-apps {
+        display: none;
+    }
     .info-content {
         padding: 0;
     }
@@ -121,7 +123,7 @@
     }
 
     .our-apps {
-        margin-top: 35px;
+        display: none;
     }
 
     #feedback-slider .owl-nav {
@@ -174,6 +176,12 @@
 
     /*reservation page end*/
     /*gallery page start*/
+    .gallery-filter-menu ul {
+        display: none;
+    }
+    .mobile-filter-menu{
+        display: block;
+    }
     .gallery-filter-menu ul li {
         padding: 3px;
         line-height: 45px;

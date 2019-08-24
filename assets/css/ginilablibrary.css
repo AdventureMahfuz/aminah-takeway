@@ -1,0 +1,16 @@
+@import url('open-sans-google-font.css');
+@import url('font-awesome.min.css');
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('bootstrap.min.css');
+@import url('owl.carousel.min.css');
+@import url('owl.theme.default.min.css');
+@import url('animate.min.css');
+
+/*for gallery page*/
+@import url('magnific-popup.css');
+
+/*for reservation page*/
+@import url('jquery-ui.min.css');
+
+@import url('style.css');
+@import url('responsive.css');
