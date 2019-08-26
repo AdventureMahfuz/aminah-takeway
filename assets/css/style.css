@@ -15,12 +15,20 @@ Index Of Content
 >>>> color variable <<<<
 ==============================================================================
 */
-:root {
-    --primary-color: #A80934;
+:root{
+    --header_bg: #A80934
 }
-
-:root {
-    --secondary-color: #620000;
+:root{
+    --header_text_color: #fff
+}
+:root{
+    --theme-color: #A80934
+}
+:root{
+    --button-color: #620000
+}
+:root{
+    --footer_bg: #A80934
 }
 
 /*
@@ -37,7 +45,7 @@ scroll bar style for chrome
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--primary-color);
+    background-color: var(--theme-color);
 }
 
 /*
@@ -55,7 +63,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 22px;
-    color: #555555;
+    color: #555;
 }
 
 img {
@@ -77,7 +85,7 @@ a:focus {
 }
 
 .section-title h4 {
-    color: var(--secondary-color);
+    color: var(--button-color);
     position: relative;
     font-size: 16px;
     line-height: 30px;
@@ -94,7 +102,7 @@ a:focus {
     bottom: -2px;
     width: 80px;
     height: 3px;
-    border-bottom: 3px solid var(--secondary-color);
+    border-bottom: 3px solid var(--button-color);
     border-radius: 5px;
 }
 
@@ -112,7 +120,7 @@ a:focus {
     bottom: 75px;
     width: 35px;
     height: 35px;
-    background: var(--primary-color);
+    background: var(--theme-color);
     text-align: center;
     color: #fff;
     line-height: 35px;
@@ -130,7 +138,7 @@ a:focus {
     position: fixed;
     bottom: 0;
     z-index: 9999;
-    background: var(--primary-color);
+    background: var(--theme-color);
     width: 100%;
     height: 65px;
 }
@@ -147,12 +155,12 @@ a:focus {
 }
 
 .mobile-sticky-bar-common-style i.fa {
-    color: #fff;
+    color: var(--header_text_color);
     font-size: 22px;
 }
 
 .mobile-sticky-bar-common-style p {
-    color: #fff;
+    color: var(--header_text_color);
     text-transform: capitalize;
     padding: 0;
     margin: 0;
@@ -167,7 +175,7 @@ ul.mobile-menu {
     list-style: none;
     padding: 0;
     margin: 0;
-    background: var(--primary-color);
+    background: var(--theme-color);
     position: fixed;
     bottom: 48px;
     right: -100%;
@@ -180,11 +188,11 @@ ul.mobile-menu {
 }
 
 ul.mobile-menu li a {
-    color: #fff;
+    color: var(--header_text_color);
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid var(--header_text_color);
     text-decoration: none;
     transition: all .5s;
     display: block;
@@ -195,10 +203,10 @@ ul.mobile-menu li a {
     position: absolute;
     right: 9px;
     top: 3px;
-    color: #fff;
+    color: var(--header_text_color);
     font-size: 25px;
     cursor: pointer;
-    border: 1px solid #fff;
+    border: 1px solid var(--header_text_color);
     padding: 2px;
 }
 .order-page-cart {
@@ -258,7 +266,7 @@ header style start
 */
 
 .header-section {
-    background: var(--primary-color);
+    background: var(--header_bg);
 }
 
 .logo img {
@@ -282,14 +290,14 @@ ul#nav li {
 
 ul#nav li a {
     position: relative;
-    color: #fff;
+    color: var(--header_text_color);
     text-transform: capitalize;
     padding: 37px 15px;
     display: block;
 }
 
 ul#nav li a:hover {
-    background: var(--secondary-color);
+    background: var(--button-color);
     transition: all .5s;
 }
 
@@ -300,12 +308,12 @@ ul#nav li a:hover:after {
     bottom: 0;
     width: 100%;
     height: 2px;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid var(--header_text_color);
     transition: all .5s;
 }
 
 ul#nav li.active a {
-    background: var(--secondary-color);
+    background: var(--button-color);
     position: relative;
 }
 
@@ -316,7 +324,7 @@ ul#nav li.active a:after {
     bottom: 0;
     width: 100%;
     height: 2px;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid var(--header_text_color);
 }
 
 /**
@@ -353,7 +361,7 @@ slider style start
     font-weight: 300;
     background: #fff;
     display: inline-block;
-    color: var(--primary-color);
+    color: var(--theme-color);
     padding: 5px 15px;
     margin: 5px 0;
     text-transform: capitalize;
@@ -429,7 +437,7 @@ slider style end
 */
 
 .mobile-order-btn a {
-    background: var(--secondary-color);
+    background: var(--button-color);
     display: block;
     padding: 15px 0;
     border-radius: 30px;
@@ -446,7 +454,7 @@ info style start
 ================================================================================
 */
 .single-info-section {
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--button-color);
     border-radius: 10px;
     padding: 10px;
     height: 280px;
@@ -462,7 +470,7 @@ info style start
     font-size: 22px;
     text-transform: capitalize;
     font-weight: 700;
-    color: var(--secondary-color);
+    color: var(--button-color);
 }
 
 .notice-bord p {
@@ -485,7 +493,7 @@ info style start
 }
 
 .opening-time ul li.special {
-    background: var(--secondary-color);
+    background: var(--button-color);
     padding: 0 5px;
     border-radius: 20px;
     color: #fff;
@@ -503,7 +511,7 @@ info style start
 
 .location ul li i.fa {
     color: #fff;
-    background: var(--secondary-color);
+    background: var(--button-color);
     height: 15px;
     width: 15px;
     border-radius: 50%;
@@ -570,7 +578,7 @@ feedback and facebook like section style start
 
 .feedback-content {
     margin-top: 25px;
-    border-top: 2px solid var(--secondary-color);
+    border-top: 2px solid var(--button-color);
 }
 
 .feedback-content p {
@@ -590,7 +598,7 @@ feedback and facebook like section style start
     font-size: 13px;
     font-style: italic;
     padding-left: 10px;
-    color: var(--secondary-color);
+    color: var(--button-color);
 }
 
 #feedback-slider .owl-nav {
@@ -613,7 +621,7 @@ feedback and facebook like section style start
 }
 
 #feedback-slider .owl-nav .owl-prev span, #feedback-slider .owl-nav .owl-next span {
-    background: var(--secondary-color);
+    background: var(--button-color);
     width: 35px;
     height: 35px;
     display: block;
@@ -633,7 +641,7 @@ footer style start
 ================================================================================
 */
 .footer-section {
-    background: var(--primary-color);
+    background: var(--footer_bg);
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -692,7 +700,7 @@ ul#mobile_filter {
     position: absolute;
     list-style: none;
     margin: 0;
-    background: var(--secondary-color);
+    background: var(--button-color);
     color: #fff;
     padding: 20px;
     right: 0;
@@ -704,7 +712,7 @@ ul#mobile_filter {
     margin: 0;
     width: 100%;
     text-align: right;
-    color: var(--secondary-color);
+    color: var(--button-color);
     font-weight: 600;
     font-size: 18px;
     text-transform: capitalize;
@@ -739,12 +747,12 @@ ul#mobile_filter li {
     bottom: -2px;
     width: 80px;
     height: 3px;
-    border-bottom: 3px solid var(--secondary-color);
+    border-bottom: 3px solid var(--button-color);
     border-radius: 5px;
 }
 
 .gallery-title h5 {
-    color: var(--secondary-color);
+    color: var(--button-color);
     font-size: 16px;
     line-height: 30px;
     font-weight: 700;
@@ -762,7 +770,7 @@ ul#mobile_filter li {
     display: inline-block;
     font-size: 16px;
     font-weight: 700;
-    color: var(--secondary-color);
+    color: var(--button-color);
     padding: 5px 10px;
     text-transform: capitalize;
     cursor: pointer;
@@ -826,18 +834,18 @@ ul#mobile_filter li {
     margin-bottom: 0;
     font-size: 16px;
     line-height: 30px;
-    color: var(--secondary-color);
+    color: var(--button-color);
     text-transform: capitalize;
 }
 
 .form-control:focus {
-    border-color: var(--secondary-color);
-    box-shadow: 0 0 0 -0.8rem var(--secondary-color);
+    border-color: var(--button-color);
+    box-shadow: 0 0 0 -0.8rem var(--button-color);
 }
 
 .submit-btn {
     border: none;
-    background: var(--secondary-color);
+    background: var(--button-color);
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -854,7 +862,7 @@ ul#mobile_filter li {
 }
 
 .address h1, h3 {
-    color: var(--secondary-color);
+    color: var(--button-color);
 }
 
 /**
@@ -878,7 +886,7 @@ ul#mobile_filter li {
     margin-bottom: 25px;
     padding: 30px 0;
     text-transform: capitalize;
-    color: var(--secondary-color);
+    color: var(--button-color);
     font-weight: 700;
 }
 
@@ -890,11 +898,11 @@ ul#mobile_filter li {
 
 .register-link a {
     text-transform: capitalize;
-    color: var(--primary-color);
+    color: var(--theme-color);
 }
 
 .submit-btn-area button {
-    background: var(--primary-color);
+    background: var(--theme-color);
     color: #fff;
     text-transform: capitalize;
     border: none;
@@ -905,14 +913,14 @@ ul#mobile_filter li {
 }
 
 .login-form-area label {
-    color: var(--secondary-color);
+    color: var(--button-color);
     text-transform: capitalize;
     line-height: 35px;
     cursor: pointer;
 }
 
 .login-form-area a {
-    color: var(--primary-color);
+    color: var(--theme-color);
 }
 
 /**
@@ -933,7 +941,7 @@ ul#mobile_filter li {
     text-transform: capitalize;
     padding-top: 50px;
     padding-bottom: 20px;
-    color: var(--secondary-color);
+    color: var(--button-color);
 }
 
 .time_alert p {
@@ -989,7 +997,7 @@ ul#mobile_filter li {
     display: block;
     text-transform: uppercase;
     font-weight: 600;
-    color: var(--secondary-color);
+    color: var(--button-color);
     font-size: 20px;
 }
 
@@ -1031,7 +1039,7 @@ ul#mobile_filter li {
     margin-bottom: 8px;
     text-transform: capitalize;
     font-weight: 700;
-    color: var(--secondary-color);
+    color: var(--button-color);
 }
 
 .select-people p i.fa {
@@ -1076,29 +1084,29 @@ div#ui-datepicker-div {
 }
 
 .date-picker-field input#datepicker::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color: var(--secondary-color);
+    color: var(--button-color);
 }
 
 .date-picker-field input#datepicker:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: var(--secondary-color);
+    color: var(--button-color);
     opacity: 1;
 }
 
 .date-picker-field input#datepicker::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color: var(--secondary-color);;
+    color: var(--button-color);;
     opacity: 1;
 }
 
 .date-picker-field input#datepicker:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: var(--secondary-color);;
+    color: var(--button-color);;
 }
 
 .date-picker-field input#datepicker::-ms-input-placeholder { /* Microsoft Edge */
-    color: var(--secondary-color);;
+    color: var(--button-color);;
 }
 
 .date-picker-field input#datepicker::placeholder { /* Most modern browsers support this now. */
-    color: var(--secondary-color);;
+    color: var(--button-color);;
 }
 
 .people-count ul {
@@ -1119,7 +1127,7 @@ div#ui-datepicker-div {
 }
 
 .people-count ul li.selected {
-    background: var(--secondary-color);;
+    background: var(--button-color);;
     color: #ffffff;
     border-radius: 50%
 }
@@ -1141,7 +1149,7 @@ div#ui-datepicker-div {
 }
 
 .time-section-title p i.fa {
-    color: var(--secondary-color);;
+    color: var(--button-color);;
     font-size: 22px;
 }
 
@@ -1169,7 +1177,7 @@ div#ui-datepicker-div {
 }
 
 .single-time-block ul li.selected {
-    background: var(--secondary-color);;
+    background: var(--button-color);;
     color: #ffffff;
 }
 
@@ -1211,7 +1219,7 @@ p.another-account {
     text-transform: capitalize;
     font-size: 18px;
     font-weight: 600;
-    color: var(--secondary-color);
+    color: var(--button-color);
     margin-top: 50px;
 }
 
@@ -1246,7 +1254,7 @@ input[type=checkbox] {
 }
 
 button.reserve-btn {
-    background: var(--secondary-color);
+    background: var(--button-color);
     color: #fff;
     text-transform: capitalize;
     display: block;
